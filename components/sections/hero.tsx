@@ -7,7 +7,7 @@ import { AudioLines, Binary, Clapperboard, Tangent } from "lucide-react"
 
 import GlobeLightImage from "@/assets/images/icons/globe_light.svg"
 import GlobeDarkImage from "@/assets/images/icons/globe_dark.svg"
-import HeroAvatar from "@/assets/images/bgs/hero_avatar.png"
+import HeroAvatar from "@/assets/images/bgs/hero_pic.svg"
 
 export default function Hero() {
     const { theme } = useTheme()
