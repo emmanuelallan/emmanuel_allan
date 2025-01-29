@@ -13,7 +13,7 @@ export default function Hero() {
     const { theme } = useTheme()
 
     return (
-        <div className="text-center container max-w-7xl mx-auto flex flex-col min-h-[calc(100vh-9.2rem)]">
+        <div className="text-center container max-w-7xl mx-auto flex flex-col min-h-[calc(100vh-9.2rem)] my-3 sm:my-0">
             <div className="flex-1 flex flex-col justify-center items-center">
                 <div className="flex flex-col items-center gap-7 max-w-3xl mx-auto">
                     <motion.div

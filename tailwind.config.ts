@@ -67,6 +67,7 @@ export default {
       fontFamily: {
         sans: ["var(--font-outfit-sans)", "sans-serif"],
         satoshi: ["var(--font-satoshi)", "sans-serif"],
+        mono: ["var(--font-dm-mono)", "monospace"],
       },
       maxWidth: {
         "7xl": "1250px",

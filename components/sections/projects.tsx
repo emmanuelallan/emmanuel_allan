@@ -9,24 +9,27 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
     {
         id: 1,
-        title: "Turn App Technologies",
-        description: "A tool design to help web developers build live, custom templates & export code",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%2018-7aJ5wJL6KLjjh3mAGvP4cDAtShZnaE.png",
-        imageAlt: "Analytics Dashboard",
+        title: "Christian Beats",
+        description: "#1 Christian Beats Marketplace for Christian Artists and Producers",
+        image: "https://x9577rfv3h.ufs.sh/f/CyUXOvcaMWOVaTEEKFHP8k2gcMevOwoTBGIHYfhpz5dVQ0rS",
+        imageAlt: "Christian Beats",
+        href: "https://christian-beats.com",
     },
     {
         id: 2,
-        title: "Audio Interface",
-        description: "A tool design to help web developers build live, custom templates & export code",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%2018-7aJ5wJL6KLjjh3mAGvP4cDAtShZnaE.png",
-        imageAlt: "Audio Interface Design",
+        title: "Life Care Dermatology Clinic",
+        description: "Dedicated Medical Clinic for Dermatology and Aesthetics for a Dubai-based Dermatologist",
+        image: "https://x9577rfv3h.ufs.sh/f/CyUXOvcaMWOVDuenL7aWfHF17nLuSvzrOTmoYGeJZ2QBiKk4",
+        imageAlt: "Life Care Dermatology Clinic",
+        href: "https://lifecareskin.ae/"
     },
     {
         id: 3,
-        title: "Project Management",
-        description: "A tool design to help web developers build live, custom templates & export code",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%2018-7aJ5wJL6KLjjh3mAGvP4cDAtShZnaE.png",
-        imageAlt: "Project Management Dashboard",
+        title: "Kush Concert Series",
+        description: "A Music Event and Entertainment Hub for Music Event Lovers",
+        image: "https://x9577rfv3h.ufs.sh/f/CyUXOvcaMWOVx9EXxh0BAC5sNnwvOVFBKH3Q4lqSMz8EZTg0",
+        imageAlt: "Kush Concret Series",
+        href: "https://kushconcertseries.com"
     },
     {
         id: 4,
@@ -34,20 +37,22 @@ const projects = [
         description: "A VST plugin for the Serum plugin host, built with the JUCE framework",
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%2018-7aJ5wJL6KLjjh3mAGvP4cDAtShZnaE.png",
         imageAlt: "Serum Vst Interface",
+        href: "https://serumvst.com",
     },
     {
         id: 5,
-        title: "Book Reading App",
-        description: "My current work in progress, a web application that helps you brew the perfect cup of coffee.",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%2018-7aJ5wJL6KLjjh3mAGvP4cDAtShZnaE.png",
-        imageAlt: "Book Reading App Interface",
+        title: "Tunu AI",
+        description: "A childs read-along companion who listens, teaches, and transforms them into an enthusiastic reader.",
+        image: "https://x9577rfv3h.ufs.sh/f/CyUXOvcaMWOVDEqEOBEaWfHF17nLuSvzrOTmoYGeJZ2QBiKk",
+        imageAlt: "Tunu AI",
+        href: "https://tunu.ai",
         comingSoon: true,
     },
 ]
 
 export default function Projects() {
     return (
-        <section className="w-full py-20 sm:py-32 bg-background container max-w-7xl mx-auto">
+        <section className="w-full py-16 sm:py-20 bg-background container max-w-7xl mx-auto">
             <div className="px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-12 gap-y-12">
                     {/* Left Column - Contains Header and Projects */}
@@ -70,7 +75,7 @@ export default function Projects() {
                                 className="mt-4 text-base sm:text-lg lg:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-muted-foreground"
                             >
                                 I like to stay busy and always have a project in the works. Take a look at some of the applications,
-                                articles, and companies I&apos;ve dedicated my time to.
+                                and companies I&apos;ve dedicated my time to.
                             </motion.p>
                         </div>
 
@@ -107,7 +112,7 @@ export default function Projects() {
                             >
                                 <Card className="group overflow-hidden w-full">
                                     <motion.a
-                                        href="#"
+                                        href={project.href}
                                         className="block relative w-full aspect-video overflow-hidden"
                                         whileHover={{ scale: 0.98 }}
                                         transition={{ duration: 0.3 }}
@@ -156,11 +161,12 @@ interface ProjectCardProps {
     description: string
     image: string
     imageAlt: string
+    href: string
     comingSoon?: boolean
     index: number
 }
 
-function ProjectCard({ title, description, image, imageAlt, index }: ProjectCardProps) {
+function ProjectCard({ title, description, image, imageAlt, href, index }: ProjectCardProps) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -171,7 +177,7 @@ function ProjectCard({ title, description, image, imageAlt, index }: ProjectCard
         >
             <Card className="group overflow-hidden">
                 <motion.a
-                    href="#"
+                    href={href}
                     className="block relative w-full aspect-video overflow-hidden"
                     whileHover={{ scale: 0.98 }}
                     transition={{ duration: 0.3 }}
@@ -193,7 +199,7 @@ function ProjectCard({ title, description, image, imageAlt, index }: ProjectCard
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 + 0.1 }}
                 >
-                    <a href="#" className="inline-flex items-center gap-2 hover:text-primary transition-colors">
+                    <a href="#" className="inline-flex items-center gap-2 hover:text-muted-foreground transition-colors">
                         {title}
                         <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8 5xl:w-9 5xl:h-9" />
                     </a>

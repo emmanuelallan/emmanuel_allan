@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, DM_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
 import { ThemeProvider } from "@/providers/theme-provider"
 import "./globals.css";
@@ -12,6 +12,12 @@ const outfitSans = Outfit({
 const Satoshi = LocalFont({
   src: "../assets/fonts/satoshi/Satoshi-Bold.woff2",
   variable: "--font-satoshi",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  variable: "--font-dm-mono",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfitSans.variable} ${Satoshi.variable} antialiased`}
+        className={`${outfitSans.variable} ${Satoshi.variable} ${dmMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}

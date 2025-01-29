@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react"
 import useSound from "use-sound"
 import { Menu } from "lucide-react"
 
-const navItems = ["Projects", "Articles", "Resume", "Uses", "Youtube", "My dear shelter"]
+const navItems = ["Projects", "Articles", "Resume", "Uses", "Shop", "My dear shelter"]
 
 export default function Navigation() {
     const [playHover] = useSound("/sounds/hover.mp3", { volume: 0.2 })
