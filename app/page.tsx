@@ -21,7 +21,7 @@ export default function Home() {
           <Hero />
         </div>
 
-        <div className="mt-auto">
+        <div className="mt-auto z-10">
           <Navigation />
         </div>
       </section>

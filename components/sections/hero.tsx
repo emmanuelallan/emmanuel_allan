@@ -7,7 +7,7 @@ import { AudioLines, Binary, Clapperboard, Tangent } from "lucide-react"
 
 import GlobeLightImage from "@/assets/images/icons/globe_light.svg"
 import GlobeDarkImage from "@/assets/images/icons/globe_dark.svg"
-import HeroAvatar from "@/assets/images/bgs/hero_pic.svg"
+import HeroAvatar from "@/assets/images/bgs/hero_avatar1.svg"
 
 export default function Hero() {
     const { theme } = useTheme()
@@ -73,7 +73,7 @@ export default function Hero() {
                                     alt="Profile"
                                     width={289}
                                     height={307}
-                                    className="relative z-10 -mb-9"
+                                    className="relative z-1 -mb-5"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/20 via-transparent to-transparent blur-2xl -z-10 sm:hidden" />
                             </motion.div>

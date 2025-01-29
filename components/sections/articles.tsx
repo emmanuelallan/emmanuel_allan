@@ -34,7 +34,7 @@ const articles = [
 
 export default function Articles() {
     return (
-        <section className="relative w-full py-20 sm:py-32 overflow-hidden container max-w-7xl mx-auto">
+        <section className="relative w-full py-16 sm:py-20 overflow-hidden container max-w-7xl mx-auto">
 
             <div className="px-4">
                 <div className="grid md:grid-cols-[300px_1fr] lg:grid-cols-[400px_1fr] 3xl:grid-cols-[500px_1fr] gap-12 sm:gap-16">
@@ -55,7 +55,7 @@ export default function Articles() {
                             transition={{ delay: 0.1 }}
                             className="text-base sm:text-lg lg:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-muted-foreground"
                         >
-                            Where expert and undiscovered voices can share their writing on any topic.
+                            Sometimes I write about my experiences and learnings. If you are interested, you can read my articles below.
                         </motion.p>
                     </div>
 
@@ -105,7 +105,7 @@ function ArticleCard({ title, description, readTime, date, link, index }: Articl
                     </div>
 
                     <div className="space-y-2">
-                        <h3 className="text-lg sm:text-xl lg:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-bold group-hover:text-primary transition-colors">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-bold group-hover:text-muted-foreground transition-colors">
                             {title}
                         </h3>
                         <p className="text-base sm:text-lg lg:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-muted-foreground">

@@ -9,10 +9,10 @@ import { Button } from "@/components/ui/button"
 import AvatarImage from "@/assets/images/bgs/avatar.svg"
 
 const selectedProjects = [
-    { name: "Crosby: POS Tool Launch", link: "#" },
-    { name: "Norman & Co: Scout Product Launch", link: "#" },
-    { name: "Gardona: Online Store Redesign", link: "#" },
-    { name: "Carmine: Skycast App Launch", link: "#" },
+    { name: "Import Module: Logic Transport Management System", link: "https://www.logic.fyi/" },
+    { name: "Christian Beats: Beats Marketplace", link: "https://christian-beats.com/" },
+    { name: "Life Care Skin: Dermatology Clinic", link: "https://lifecareskin.ae/" },
+    { name: "Kush Concert Series: Music Festival", link: "https://kushconcertseries.com/" },
 ]
 
 const socials = [
@@ -59,7 +59,7 @@ export default function Footer() {
                                 transition={{ delay: 0.1 }}
                                 className="text-base sm:text-lg lg:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-gray-400"
                             >
-                                Full Stack Developer, currently crafting experiences at Crosby.
+                                Full Stack Developer, currently crafting experiences at Logic Solutions.
                             </motion.p>
                         </div>
 
@@ -121,7 +121,7 @@ export default function Footer() {
                                 <ul className="space-y-2">
                                     {selectedProjects.map((project) => (
                                         <li key={project.name}>
-                                            <a href={project.link} className="text-base sm:text-lg hover:text-primary transition-colors">
+                                            <a href={project.link} className="text-base sm:text-lg hover:text-muted-foreground transition-colors">
                                                 {project.name}
                                             </a>
                                         </li>
@@ -140,7 +140,7 @@ export default function Footer() {
                                 <ul className="space-y-2">
                                     {socials.map((social) => (
                                         <li key={social.name}>
-                                            <a href={social.link} className="text-base sm:text-lg hover:text-primary transition-colors flex items-center gap-2">
+                                            <a href={social.link} className="text-base sm:text-lg hover:text-muted-foreground transition-colors flex items-center gap-2">
                                                 <i className={`bi bi-${social.icon}`}></i>
                                                 {social.name}
                                             </a>

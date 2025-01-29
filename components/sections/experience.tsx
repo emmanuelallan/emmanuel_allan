@@ -8,57 +8,66 @@ const experiences = [
     {
         id: 1,
         date: "Aug, 24 - PRESENT",
-        title: "Senior Frontend Engineer",
+        title: "Typescript Developer",
         company: "LOGIC Solutions GmbH",
         description:
-            "Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
-        technologies: ["TypeScript", "React", "Next.js"],
+            "Led the development of the Import module of the Logic Transport Management System, a platform that helps logistics companies manage their operations and optimize their supply chain.",
+        technologies: ["TypeScript", "React", "Next.js", "Tailwind", "Shadcn"],
     },
     {
         id: 2,
-        date: "Jan, 23 - Aug, 24",
-        title: "Frontend Engineer",
-        company: "Tech Innovators Inc",
+        date: "Sep, 21 - Feb, 24",
+        title: "Reinforcement Learning Coding Specialist",
+        company: "Remotasks, Scale AI",
         description:
-            "Led the development of responsive web applications, implemented new features, and improved application performance. Collaborated with UX designers to create intuitive user interfaces.",
-        technologies: ["TypeScript", "Vue.js", "Tailwind"],
+            "As a Coding Agent Performance Evaluation, I was responsible for evaluating the performance of coding agents in reinforcement learning tasks. I used Python, Reinforcement Learning, and Deep Learning to develop and evaluate the agents.",
+        technologies: ["Python", "Reinforcement Learning", "Deep Learning", "Gemini", "Llama"],
     },
     {
         id: 3,
-        date: "Jun, 21 - Dec, 22",
-        title: "Junior Developer",
-        company: "Digital Solutions Ltd",
+        date: "Jan, 21 - Sep, 21",
+        title: "Junior Developer (Contract)",
+        company: "Savannah Informatics",
         description:
-            "Developed and maintained client websites, implemented responsive designs, and worked on performance optimization. Participated in code reviews and team meetings.",
-        technologies: ["JavaScript", "React", "CSS3"],
+            "Developed and maintained legacy system EDI, to help data interchange between hospitals, patients and insurance companies.",
+        technologies: ["JavaScript", "Angular", "Django"],
+    },
+    {
+        id: 4,
+        date: "Apr, 18 - Sep, 18",
+        title: "Intern Developer",
+        company: "Andela",
+        description:
+            "Developed three-tier web architecture skills using Python Flask and MySQL through Andela Bootcamp (Cohort 2.0) and collaboration with Google #ALCwithGoogle.",
+        technologies: ["Flask", "Python", "MySQL", "HTML", "CSS", "JavaScript"],
     },
 ]
 
 const education = [
     {
         id: 1,
-        date: "2019 - 2023",
+        date: "2016 - 2024",
         title: "Bachelor of Science in Computer Science",
-        company: "Purdue University",
+        company: "Chuka University",
         description:
-            "Focused on web development, software engineering, and user interface design. Graduated with honors and completed multiple practical projects.",
-        technologies: ["Algorithms", "Data Structures", "Web Development"],
+            "Focused on computer science fundamentals, algorithms, data structures, data science and software engineering. Graduated with 2nd class honours and completed multiple practical projects.",
+        technologies: ["DS & Algorithms", "Web/Mobile Development", "Data Science", "Software Engineering"],
     },
     {
         id: 2,
-        date: "2023",
+        date: "2021 - 2022",
         title: "Full-Stack Development Certification",
-        company: "Tech Academy",
+        company: "Microverse Bootcamp",
         description:
-            "Intensive program covering modern web development technologies and practices. Completed several real-world projects.",
-        technologies: ["MERN Stack", "Cloud Computing", "DevOps"],
+            "Intensive program coveringboth front-end and back-end development through remote pair programming and collaboration. Completed several real-world projects.",
+        technologies: ["Ruby on Rails", "React-Redux", "Design Patterns", "TDD", "CI/CD"],
     },
 ]
 
 export default function Experience() {
     return (
         <section className="w-full bg-primary">
-            <div className="py-20 sm:py-32 text-white container max-w-7xl mx-auto">
+            <div className="py-16 sm:py-20 text-white container max-w-7xl mx-auto">
                 <div className="px-4">
                     <div className="space-y-12 sm:space-y-16">
                         <div className="space-y-4 sm:space-y-6">
@@ -77,8 +86,7 @@ export default function Experience() {
                                 transition={{ delay: 0.1 }}
                                 className="text-base sm:text-lg lg:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-white/80 max-w-3xl"
                             >
-                                I like to stay busy and always have a project in the works. Take a look at some of the applications,
-                                articles, and companies I&apos;ve dedicated my time to.
+                                Through my studies and experience, I&apos;ve built a strong foundation in computer science, software engineering, and product development, applying these skills to real-world applications and businesses.
                             </motion.p>
                         </div>
 
